@@ -1,8 +1,88 @@
 <!DOCTYPE html>
-<html>
-<head><title>Silent Winds Gallery</title><link rel="stylesheet" href="style.css"></head>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Silent Winds Gallery</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Georgia', serif;
+      background-color: #f7f4f0;
+      color: #2c2c2c;
+    }
+    .intro {
+      text-align: center;
+      padding: 3em 1em 2em;
+    }
+    .intro h1 {
+      font-size: 3em;
+      margin-bottom: 0.5em;
+    }
+    .intro p {
+      font-size: 1.2em;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+    .gallery-section {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      padding: 2em;
+      border-top: 1px solid #ccc;
+    }
+    .gallery-section:nth-child(even) {
+      flex-direction: row-reverse;
+      background-color: #f0ece7;
+    }
+    .gallery-section img.thumbnail {
+      width: 300px;
+      height: auto;
+      border-radius: 8px;
+      margin: 1em;
+    }
+    .section-text {
+      max-width: 500px;
+      padding: 1em;
+    }
+    .section-text h2 {
+      margin-top: 0;
+      font-size: 1.8em;
+    }
+    .button {
+      display: inline-block;
+      margin-top: 1em;
+      padding: 0.6em 1.2em;
+      background: #6c4c2b;
+      color: white;
+      text-decoration: none;
+      border-radius: 4px;
+      transition: background 0.3s;
+    }
+    .button:hover {
+      background: #8d6740;
+    }
+  </style>
+</head>
 <body>
-<h1>Silent Winds Gallery</h1>
-<p>Symbolic art in turbulent times. Curated whispers from the edge of liberty.</p>
-<a href="https://claravocks.github.io">Visit Clara’s Office</a>
-</body></html>
+  <div class="intro">
+    <h1>Silent Winds Gallery</h1>
+    <p>
+      Welcome, dear guest. I’m Clara Vocks, and this is the quiet space I curate. The pieces gathered here are not always comfortable, but they are always honest. They are fragments of dreams, memories, and truths we seldom say aloud.
+    </p>
+  </div>
+
+  <div class="gallery-section">
+    <img src="images/the_homecoming_light.png" alt="The Homecoming Light" class="thumbnail">
+    <div class="section-text">
+      <h2>Surreal Whispers</h2>
+      <p>
+        Sometimes, the mind speaks in metaphors when the heart cannot bear plain language. This wing is where the strange becomes sacred—where images defy logic, yet feel more true than reality.
+      </p>
+      <a href="surreal_whispers.html" class="button">Enter the Surreal Wing</a>
+    </div>
+  </div>
+
+</body>
+</html>
